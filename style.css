@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+*,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+}
+
+.nav_img_container {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.nav_img_container img {
+  height: 20px;
+  width: auto;
+  position: relative;
+  left: -100px;
+  margin-right: 50px;
+}
+
+.nav_links_container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_links_container a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: black;
+}
+
+.nav_links_container a:hover {
+    text-decoration: underline;
+   
+  }
+
+.nav_btn_container button {
+  padding: 0.5rem;
+  background: #f43636;
+  border-radius: 3.1px;
+  width: 70px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  outline: none;
+  color: white;
+  transition: 0.1 ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav_btn_container button:hover {
+    box-shadow: 10px 4px 21px -2px rgba(244,54,54,0.18);
+    -webkit-box-shadow: 10px 4px 21px -2px rgba(244,54,54,0.18);
+    -moz-box-shadow: 10px 4px 21px -2px rgba(244,54,54,0.18);
+}
+
+main {
+  background-image: url(./img/photo-1556565681-67b9cd907d20.jfif);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+  }
+
+  .nav_img_container {
+    display: inline-block;
+    padding: 0.5rem;
+    align-items: center;
+  }
+
+  .nav_img_container img {
+    height: 20px;
+  }
+
+  .nav_links_container a {
+   display: none;
+  }
+
+  .nav_btn_container button {
+    padding: 0.5rem;
+    background: #f43636;
+    border-radius: 3.1px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    outline: none;
+    color: white;
+    transition: 0.1 ease;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .nav_btn_container button:hover {
+    box-shadow: 10px 4px 21px -2px rgba(244,54,54,0.18);
+    -webkit-box-shadow: 10px 4px 21px -2px rgba(244,54,54,0.18);
+    -moz-box-shadow: 10px 4px 21px -2px rgba(244,54,54,0.18);
+}
+main {
+    background-image: url(./img/photo-1556565681-67b9cd907d20.jfif);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+  }
+}
