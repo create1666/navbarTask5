@@ -28,7 +28,7 @@ nav {
 }
 
 .nav_links_container {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -68,30 +68,70 @@ nav {
 main {
   background-image: url(./img/photo-1556565681-67b9cd907d20.jfif);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
 }
 
 @media (max-width: 768px) {
+
+  
+main {
+  background-image: url(./img/photo-1556565681-67b9cd907d20.jfif);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: white;
   }
 
-  .nav_img_container {
-    display: inline-block;
+  /* .nav_img_container {
+    display: flex;
     padding: 0.5rem;
     align-items: center;
-  }
+  } */
 
   .nav_img_container img {
     height: 20px;
   }
+.a_link_container{
+  display: none;
+  margin-top: 2rem;
+  margin-right: 10rem;
+  text-align: center;
+}
+.active {
+  display: flex;
+}
 
-  .nav_links_container a {
-   display: none;
+  .nav_links_container .a_link_container > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .04rem;
+    margin: .5rem;
+    list-style: none; 
+    width: 100%;
   }
+
+  .a_link_container > ul li {
+   margin: .5rem; 
+   width: 100%;
+  }
+
+  .a_link_container > ul li{
+    background-color: rgb(238, 234, 234);
+    width: 100%;
+   }
+
+   .a_link_container > ul li:hover{
+    background-color: rgb(136, 97, 97);
+   }
+  /* .nav_links_container a {
+   display: none;
+  } */
 
   .nav_btn_container button {
     padding: 0.5rem;
