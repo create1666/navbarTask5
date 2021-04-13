@@ -8,3 +8,4 @@ console.log(loginBtn)
            });
     })
 
+console.log('This is used to checkout how branches work')
